@@ -22,6 +22,7 @@
 .card-list .card {
   position: relative;
 }
+
 .card-list .card p {
   position: absolute;
   bottom: 10px;
