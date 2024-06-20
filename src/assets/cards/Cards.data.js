@@ -12,42 +12,42 @@ import card_img10 from './card_img10.jpg'
 export const cards_data = [
   {
     image: card_img1,
-    name: ""
+    name: "TITANIC"
   },
   {
     image: card_img2,
-    name: ""
+    name: "The Shawshank Redemption"
   },
   {
     image: card_img3,
-    name: ""
+    name: "twilight"
   },
   {
     image: card_img4,
-    name: ""
+    name: "AVENGERS"
   },
   {
     image: card_img5,
-    name: ""
+    name: "Back To The Future"
   },
   {
     image: card_img6,
-    name: ""
+    name: "Pirates of Caribbean"
   },
   {
     image: card_img7,
-    name: ""
+    name: "LEON"
   },
   {
     image: card_img8,
-    name: ""
+    name: "Butterfly Effect"
   },
   {
     image: card_img9,
-    name: ""
+    name: "Forrest Gump"
   },
   {
     image: card_img10,
-    name: ""
+    name: "Greatest Showman"
   },
 ]
