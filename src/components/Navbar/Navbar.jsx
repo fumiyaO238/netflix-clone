@@ -4,10 +4,24 @@ import serch_icon from '../../assets/serch_icon.png'
 import bell_icon from '../../assets/bell_icon.png'
 import profile_img from '../../assets/profile_img.png'
 import caret_icon from '../../assets/caret_icon.png'
+import { useEffect, useRef } from 'react'
 
 const Navbar = () => {
+
+  const navRef = useRef();
+
+  useEffect(() => {
+    window.addEventListener('scroll', () => {
+      if(window.scrollY >= 80) {
+        navRef.current.classList.add('nav-dark')
+      } else {
+        navRef.current.classList.remove('nav-dark')
+      }
+    })
+  }, [])
+
   return (
-    <div className='navbar'>
+    <div ref={navRef} className='navbar'>
       <div className="navbar-left">
         <img src={logo} alt="" />
         <ul>
