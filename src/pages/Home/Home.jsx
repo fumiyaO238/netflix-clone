@@ -1,9 +1,9 @@
 import './Home.css'
 import Navbar from '../../components/Navbar/Navbar'
-import hero_banner from '../../assets/hero_banner.jpg'
-import hero_title from '../../assets/hero_title.jpg'
-import play_icon from '../../assets/play_icon.jpg'
-import info_icon from '../../assets/info_icon.jpg'
+import hero_banner from '../../assets/cards/card_img1.jpg'
+import hero_title from '../../assets/cards/hero_title.png'
+import play_icon from '../../assets/play_icon.png'
+import info_icon from '../../assets/info_icon.png'
 import TitleCards from '../../components/TitleCards/TitleCards'
 
 const Home = () => {
@@ -14,7 +14,7 @@ const Home = () => {
         <img src={hero_banner} alt="" className='banner_img' />
         <div className="hero-caption">
           <img src={hero_title} alt="" className='caption-img' />
-          <p>Discovering his ties to a secret ancient order, a young man living in modern Istanbul embarks on a quest to save the city from an immortal enemy.</p>
+          <p>Rose, who is being forced to marry a wealthy man, falls in love with Jack, a talented artist, aboard the unsinkable Titanic. Unfortunately, the ship hits an iceberg, endangering their lives. Unfortunately he dies.</p>
           <div className='hero-btns'>
             <button className='btn'><img src={play_icon} alt="" />Play</button>
             <button className='btn dark-btn'><img src={info_icon} alt="" />More Info</button>
