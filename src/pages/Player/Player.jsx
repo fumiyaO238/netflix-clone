@@ -27,7 +27,7 @@ const Player = () => {
     .then(response => response.json())
     .then(response => setApiData(response.results[0]))
     .catch(err => console.error(err));  
-  }, [])
+  }, [id])
 
   return (
     <div className='player'>
