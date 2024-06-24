@@ -24,9 +24,9 @@ const TitleCards = ({ title, category }) => {
     };
 
     fetch(`https://api.themoviedb.org/3/movie/${category ? category : "now_playing"}?language=en-US&page=1`, options)
-    .then(response => response.json())
-    .then(response => setApiData(response.results))
-    .catch(err => console.error(err));
+      .then(response => response.json())
+      .then(response => setApiData(response.results))
+      .catch(err => console.error(err));
 
     cardsRef.current.addEventListener('wheel', handleWheel);
   }, [category])
@@ -36,10 +36,10 @@ const TitleCards = ({ title, category }) => {
       <h2>{title ? title : "Popular on Netflix"}</h2>
       <div className="card-list" ref={cardsRef}>
         {apiData.map((card, index) => {
-          return <Link to={`/player/${card.id}`} className="card" key={index}>
-            <img src={`https://image.tmdb.org/t/p/w500` + card.backdrop_path} alt="" />
-            <p>{card.original_title}</p>
-          </Link>
+          return <Link to={'/player/' + card.id} className="card" key={index}>
+              <img src={`https://image.tmdb.org/t/p/w500${card.backdrop_path}`}/>
+              <p>{card.original_title}</p>
+            </Link>
         })}
       </div>
     </div>
