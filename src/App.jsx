@@ -10,6 +10,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const App = () => {
 
+  console.log('testのため追記');
   const navigate = useNavigate();
 
   useEffect(() => {
